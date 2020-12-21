@@ -22,5 +22,23 @@
     "repository"    : "HANA-CI-Build-Project/kernel_xiaomi_lavender-4.14",
     "target_path"   : "kernel/xiaomi/sdm660",
     "branch"        : "sched"
+  },
+  {
+    "remote"        : "github",
+    "repository"    : "BiancaProject/android_hardware_qcom_audio",
+    "target_path"   : "hardware/qcom-caf/sdm660-4.14/audio",
+    "branch"        : "r-msm8998-4.14"
+  },
+  {
+    "remote"        : "github",
+    "repository"    : "BiancaProject/android_hardware_qcom_display",
+    "target_path"   : "hardware/qcom-caf/sdm660-4.14/display",
+    "branch"        : "r-msm8998-4.14"
+  },
+  {
+    "remote"        : "github",
+    "repository"    : "BiancaProject/android_hardware_qcom_media",
+    "target_path"   : "hardware/qcom-caf/sdm660-4.14/media",
+    "branch"        : "r-msm8998-4.14"
   }
 ]
