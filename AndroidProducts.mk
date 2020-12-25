@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_lavender.mk
+    $(LOCAL_DIR)/nad_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_lavender-user \
-    komodo_lavender-userdebug \
-    komodo_lavender-eng
+    nad_lavender-user \
+    nad_lavender-userdebug \
+    nad_lavender-eng
