@@ -1189,12 +1189,12 @@ vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libgoodixhwfingerprint.so
 
-# FM - from laurel_sprout V12.0.3.0.RFQMIXM
-system_ext/lib64/fm_helium.so|68702cf4304128663a1578150a1ed8063d93ca73
-system_ext/lib64/libfm-hci.so|0da384e2fd4809bb39a36fb25d3c6c0325cea0c3
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b7dd1354a1415cf49b96b6bb0cc44920c41d2aab
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|e8a122a7644c4c258eda87385c89b0d6c596637f
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
+# FM - from jasmine V11.0.17.0.QDIMIXM
+system_ext/lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
+system_ext/lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|506efd87250697bdae271f86ea472785a77b84ef
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|e14abd3a8413ccfac55339ad03b592bfe642b833
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1656,6 +1656,9 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
 vendor/lib64/libwvhidl.so|38677623330ec145a62afdef110c713c9492671c
+
+# Wifi - from lavender
+vendor/bin/cnss-daemon|ca3311dca74d77d703c4750063ea83b6fc7285d9
 
 # WiFi Display - from jasmine
 bin/wfdservice|d9cccfd6ca14a1d83117533296d6cac2c139c310
