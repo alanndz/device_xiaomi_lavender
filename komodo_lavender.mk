@@ -19,15 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Bianca stuff
-$(call inherit-product, vendor/bianca/config/common_full_phone.mk)
+# Inherit some common Komodo stuff
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 BIANCA_OFFICIAL := true
 
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := komodo_lavender
 
 # Inherit from common lavender
 $(call inherit-product, $(LOCAL_PATH)/common_lavender.mk)
