@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),whyred)
+ifeq ($(TARGET_DEVICE),lavender)
 
 include $(CLEAR_VARS)
 

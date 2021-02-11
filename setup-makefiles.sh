@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=whyred
+DEVICE=lavender
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
