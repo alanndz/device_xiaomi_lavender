@@ -19,15 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Bianca stuff
-$(call inherit-product, vendor/bianca/config/common_full_phone.mk)
+# Inherit some common syberia stuff
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 2160
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Official tag
-BIANCA_OFFICIAL := true
-
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := syberia_lavender
 # Inherit from common
 $(call inherit-product, $(LOCAL_PATH)/common_lavender.mk)

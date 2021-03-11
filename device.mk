@@ -28,8 +28,12 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lavender \
+    $(LOCAL_PATH)/overlay-lavender
+
+ifeq ($(PRODUCT_NAME),lineage_lavender)
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
+endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

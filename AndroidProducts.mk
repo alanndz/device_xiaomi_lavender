@@ -13,6 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(ROMS),syberia)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/syberia_lavender.mk
+
+COMMON_LUNCH_CHOICES := \
+    syberia_lavender-user \
+    syberia_lavender-userdebug \
+    syberia_lavender-eng
+else
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_lavender.mk
 
@@ -20,3 +29,4 @@ COMMON_LUNCH_CHOICES := \
     lineage_lavender-user \
     lineage_lavender-userdebug \
     lineage_lavender-eng
+endif
