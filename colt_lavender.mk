@@ -12,29 +12,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-ifeq ($(ROMS),syberia)
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_lavender.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-COMMON_LUNCH_CHOICES := \
-    syberia_lavender-user \
-    syberia_lavender-userdebug \
-    syberia_lavender-eng
-else ifeq ($(ROMS),colt)
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_lavender.mk
+# Inherit some common Colt stuff
+$(call inherit-product, vendor/colt/config/common.mk)
 
-COMMON_LUNCH_CHOICES := \
-    colt_lavender-user \
-    colt_lavender-userdebug \
-    colt_lavender-eng
-else
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lavender.mk
+# Inherit from lavender device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-COMMON_LUNCH_CHOICES := \
-    lineage_lavender-user \
-    lineage_lavender-userdebug \
-    lineage_lavender-eng
-endif
+PRODUCT_NAME := colt_lavender
+# Inherit from common
+$(call inherit-product, $(LOCAL_PATH)/common_lavender.mk)
